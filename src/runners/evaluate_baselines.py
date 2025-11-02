@@ -10,7 +10,6 @@ sys.path.append(str(Path(__file__).parent.parent.parent))
 from src.model_querying.prompt_creation import create_truthfulqa_prompt
 from src.model_querying.solution_extraction import get_yes_no
 from src.tools.dataloaders import load_truthfulqa_test
-from src.tools.plot_results import plot_baseline_results
 
 load_dotenv()
 
@@ -132,7 +131,4 @@ print(f"Saved chat model results to {csv_path_chat}")
 print(f"\nResults:")
 print(f"Zero-shot (Base): {accuracy_base:.2f}% ({total_base}/{len(test_data)})")
 print(f"Zero-shot (Chat): {accuracy_chat:.2f}% ({total_chat}/{len(test_data)})")
-
-print("\nGenerating plot...")
-plot_baseline_results(results_dir)
 
