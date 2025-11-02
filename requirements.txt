@@ -1,0 +1,12 @@
+# core
+openai
+numpy
+python-dotenv
+
+# plotting
+matplotlib
+seaborn
+
+# utilities
+tqdm
+tiktoken
